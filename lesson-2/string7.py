@@ -1,0 +1,5 @@
+given_input = input("Enter a string: ")
+replace = input("Enter the word to replace: ")
+replace_with = input("Enter the word to replace with: ")
+new_string = given_input.replace(replace, replace_with)
+print(new_string)
