@@ -1,11 +1,9 @@
-import csv
-import json
 import requests
 import random
 
 # Task 1: Weather API
 def get_weather(city):
-    api_key = "your_api_key_here" 
+    api_key = "api_key" 
     url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
     response = requests.get(url)
     data = response.json()
@@ -19,7 +17,7 @@ def get_weather(city):
 
 # Task 2: Movie Recommendation System
 def get_movie_recommendation(genre):
-    api_key = "your_api_key_here"  # Replace with your TMDB API key
+    api_key = "api_key"  
     url = f"https://api.themoviedb.org/3/discover/movie?api_key={api_key}&with_genres={genre}"
     response = requests.get(url)
     data = response.json()
